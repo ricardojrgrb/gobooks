@@ -1,0 +1,65 @@
+### GET BOOKS
+GET http://localhost:8080/books
+Accept: application/json
+
+### GET BOOKS PROD
+GET https://gobooks-3kqu4nipta-uc.a.run.app/books
+Accept: application/json
+
+### ADD NEW BOOK
+POST http://localhost:8080/books
+Content-Type: : application/json
+
+{
+    "title": "Chuck Nóia",
+    "author": "Abreu",
+    "genre": "Ficção"
+}
+
+### ADD NEW BOOK PROD
+POST https://gobooks-3kqu4nipta-uc.a.run.app/books
+Content-Type: : application/json
+
+{
+    "title": "Barb Véio",
+    "author": "Tuelhinho",
+    "genre": "Motos"
+}
+
+### GET BOOK BY ID
+GET http://localhost:8080/books/2
+Accept: application/application/json
+
+### UPDATE BOOK BY ID
+PUT http://localhost:8080/books/2
+Content-Type: application/json
+
+{
+    "title": "História de GRB",
+    "author": "keko",
+    "genre": "verdadeira"
+}
+
+### DELETE BOOK BY ID
+DELETE http://localhost:8080/books/1
+
+# [
+#   {
+#     "ID": 2,
+#     "Title": "História de GRB",
+#     "Author": "keko",
+#     "Genre": "verdadeira"
+#   },
+#   {
+#     "ID": 3,
+#     "Title": "Harry Potter",
+#     "Author": "Abreu",
+#     "Genre": "Ficção"
+#   },
+#   {
+#     "ID": 4,
+#     "Title": "Chuck Nóia",
+#     "Author": "Abreu",
+#     "Genre": "Ficção"
+#   }
+# ]
